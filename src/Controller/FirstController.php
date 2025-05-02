@@ -19,7 +19,7 @@ final class FirstController extends AbstractController
 
     #[route('/sayHello', name: 'say.hello')]
     public function sayHello(): Response{
-        $x=rand(0,2);
+        $x=rand(0,5);
         echo $x;
         if($x==1){
         return $this->forward('App\Controller\FirstController::index');}
